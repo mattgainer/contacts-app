@@ -1,0 +1,26 @@
+<%= form_tag '/newcontactsubmit', method: :post do %>
+  <div class = "container-fluid">
+    <div class = "row">
+      <br>
+      <div class = "col-md-2">
+        <%= label_tag :first_name, "First Name:" %><br>
+        <%= text_field_tag :first_name %>
+      </div>
+      <div class = "col-md-2">
+        <%= label_tag :last_name, "Last Name:" %><br>
+        <%= text_field_tag :last_name %>
+      </div>
+      <div class = "col-md-2">
+        <%= label_tag :email, "Email:" %><br>
+        <%= text_field_tag :email %>
+      </div>
+      <div class = "col-md-2">
+        <%= label_tag :phone, "Phone:" %><br>
+        <%= text_field_tag :phone %>
+      </div>
+    </div>
+    <div>
+      <br><%= submit_tag "Add Contact" %>
+    </div>
+  </div>
+  <% end %>

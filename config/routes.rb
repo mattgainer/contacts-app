@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/firstcontact', to: 'pages#first_contact'
   get '/allcontacts', to: 'pages#all_contacts'
+  get '/newcontact', to: 'pages#new_contact'
+  post '/newcontactsubmit', to: 'pages#new_contact_submit'
 
 
 
