@@ -1,0 +1,22 @@
+<table>
+  <caption>Contact Info</caption>
+  <tr>
+    <th>First Name</th>
+    <td><%= @contact.first_name %></td>
+  </tr>
+  <tr>
+    <th>Last Name</th>
+    <td><%= @contact.last_name %></td>
+  </tr>
+    <th>Email</th>
+    <td><a href="mailto:<%= @contact.email %>"><%= @contact.email %></a></td>
+  </tr>
+  <tr>
+    <th>Phone Number</th>
+    <td><%= @contact.phone %></td>
+  </tr>
+    <tr>
+    <th>Date Last Updated</th>
+    <td><%= @contact.nice_updated %></td>
+  </tr>
+</table><br>

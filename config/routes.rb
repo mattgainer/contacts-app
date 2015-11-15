@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get '/firstcontact', to: 'pages#first_contact'
-  get '/allcontacts', to: 'pages#all_contacts'
-  get '/newcontact', to: 'pages#new_contact'
-  post '/newcontactsubmit', to: 'pages#new_contact_submit'
-
+  get '/contacts', to: 'contacts#index'
+  get '/contacts/new', to: 'contacts#new'
+  post '/contacts/:id', to: 'contacts#create'
+  get '/contacts/:id', to: 'contacts#show'
+  get '/contacts/:id/edit', to: 'contacts#edit'
+  patch '/contacts/:id', to: 'contacts#update'
+  delete '/contacts/:id', to: 'contacts#destroy'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
