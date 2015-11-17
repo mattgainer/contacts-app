@@ -5,6 +5,10 @@
     <td><%= @contact.first_name %></td>
   </tr>
   <tr>
+    <th>Middle Name</th>
+    <td><%= @contact.middle_name %></td>
+  </tr>
+  <tr>
     <th>Last Name</th>
     <td><%= @contact.last_name %></td>
   </tr>
@@ -15,8 +19,16 @@
     <th>Phone Number</th>
     <td><%= @contact.phone %></td>
   </tr>
-    <tr>
+  <tr>
+    <th>Bio</th>
+    <td><%= @contact.bio %></td>
+  </tr>
+  <tr>
     <th>Date Last Updated</th>
     <td><%= @contact.nice_updated %></td>
+  </tr>
+    </tr>
+  <tr>
+    <td><%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete %></td>
   </tr>
 </table><br>

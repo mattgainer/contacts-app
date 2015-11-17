@@ -3,7 +3,7 @@
   <caption>Contact Info</caption>
   <tr>
     <th>Name</th>
-    <td><%= contact.full_name %></td>
+    <td><%= link_to "#{contact.full_name}", "/contacts/#{contact.id}" %></td>
   </tr>
     <th>Email</th>
     <td><a href="mailto:<%= contact.email %>"><%= contact.email %></a></td>
@@ -11,6 +11,10 @@
   <tr>
     <th>Phone Number</th>
     <td><%= contact.phone %></td>
+  </tr>
+  <tr>
+    <th>Bio</th>
+    <td><%= contact.bio %></td>
   </tr>
 </table><br>
 <% end %>

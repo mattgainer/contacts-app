@@ -1,10 +1,14 @@
-<%= form_tag '/products', method: :post do %>
+<%= form_tag '/contacts/', method: :post do %>
   <div class = "container-fluid">
     <div class = "row">
       <br>
       <div class = "col-md-2">
         <%= label_tag :first_name, "First Name:" %><br>
         <%= text_field_tag :first_name %>
+      </div>
+      <div class = "col-md-2">
+        <%= label_tag :middle_name, "Middle Name:" %><br>
+        <%= text_field_tag :middle_name %>
       </div>
       <div class = "col-md-2">
         <%= label_tag :last_name, "Last Name:" %><br>
@@ -17,6 +21,10 @@
       <div class = "col-md-2">
         <%= label_tag :phone, "Phone:" %><br>
         <%= text_field_tag :phone %>
+      </div>
+      <div class = "col-md-2">
+        <%= label_tag :bio, "Bio:" %><br>
+        <%= text_area_tag :bio %>
       </div>
     </div>
     <div>
